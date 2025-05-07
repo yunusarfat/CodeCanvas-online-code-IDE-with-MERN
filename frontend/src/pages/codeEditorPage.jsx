@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import EditorNavbar from "../components/EditorNavbar";
-
+import Editor from "@monaco-editor/react";
 import { MdOutlineLightMode } from "react-icons/md";
 import { FaExpandAlt } from "react-icons/fa";
 import "../app.css";
@@ -118,6 +118,7 @@ const CodeEditorPage = () => {
   return (
     <div>
       <EditorNavbar />
+      
       <div className="flex">
         <div className={`left ${isExpanded ? "w-full" : "w-1/2"}`}>
           <div className="tabs text-white flex p-5 justify-between items-center gap-2 w-full h-[50px] bg-[#1A1919]">

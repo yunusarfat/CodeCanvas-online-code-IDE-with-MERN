@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../images/canvaslogo.png";
-import { FaDownload } from "react-icons/fa";
+
+import { Link } from "react-router-dom";
 
 function EditorNavbar() {
   return (
@@ -16,17 +17,16 @@ function EditorNavbar() {
         </div>
 
         {/* File Path Info */}
-        <div className="text-sm sm:text-base font-medium text-gray-700">
-          File / <span className="text-gray-400">My first project</span>
-        </div>
-
+        
         {/* Download Icon Button */}
-        <button
-          title="Download"
-          className="btn not-odd:bg-black text-white p-2.5 rounded-md hover:bg-gray-800 transition duration-200"
-        >
-          <FaDownload className="text-lg" />
-        </button>
+     
+        <Link
+            to="/"
+            className=" bg-blue-500 rounded-2xl p-2 transition-colors duration-200"
+          >
+            Back
+          </Link>
+         
       </nav>
     </header>
   );
