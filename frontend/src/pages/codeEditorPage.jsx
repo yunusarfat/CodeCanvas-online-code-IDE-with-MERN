@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import EditorNavbar from "../components/EditorNavbar";
-import Editor from "@monaco-editor/react";
+
 import { MdOutlineLightMode } from "react-icons/md";
 import { FaExpandAlt } from "react-icons/fa";
 import "../app.css";
